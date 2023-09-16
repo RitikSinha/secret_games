@@ -5,6 +5,7 @@
 }
 :root {
   --bg: #0f1111;
+  --pri: #074133;
 }
 
 body {
@@ -104,6 +105,54 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: flex-start;
+  padding: 50px;
+}
+.footer-img h1 {
+  font-size: 2.5rem;
+}
+.footer-img h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.subscribe-btn {
+  background-color: var(--pri);
+  padding: 20px 50px;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+.green-bar {
+  background-color: var(--pri);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+.icons svg {
+  width: 50px;
+  margin-right: 30px;
+}
+.links a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+footer {
+  position: relative;
+}
+.footer-logo img {
+  width: 150px;
+  position: absolute;
+  bottom: 45px;
+  right: 43vw;
+}
+.footer-logo {
+  padding: 50px;
 }
 @media only screen and (max-width: 600px) {
   .header {
@@ -111,6 +160,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 50vh;
+  }
+  .section {
+    text-align: center;
   }
   .header img {
     width: 150px;
@@ -124,5 +176,39 @@ body {
   .section p {
     font-size: 1rem;
     width: 60%;
+    margin-bottom: 50px;
+  }
+  .footer-img {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-img h1 {
+    font-size: 2rem;
+  }
+  .footer-img h3 {
+    font-size: 1rem;
+  }
+  .green-bar {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .icons svg {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .footer-logo img {
+    width: 100px;
+    position: absolute;
+    bottom: 75px;
+    right: 30vw;
+    transform: translate(-50%, -50%);
+  }
+  .footer-logo {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .footer-logo p {
+    margin-top: 20px;
   }
 }
