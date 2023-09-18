@@ -99,7 +99,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
 }
 .footer-img {
   background: url(./assets/footer.png);
@@ -124,6 +123,7 @@ body {
   text-decoration: none;
   display: inline-block;
   margin-top: 20px;
+  border: none;
 }
 .green-bar {
   background-color: var(--pri);
