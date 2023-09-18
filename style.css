@@ -7,11 +7,28 @@
   --bg: #0f1111;
   --pri: #074133;
 }
-
+@font-face {
+  font-family: "Font1";
+  src: url("./assets/fonts/microsoft-phagspa/phagspab.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font2";
+  src: url("./assets/fonts/palatino-linotype/pala.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font3";
+  src: url("./assets/fonts/the_bold_font/THEBOLDFONT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font4";
+  src: url("./assets/fonts/the_bold_font/THEBOLDFONT\ 2022.otf")
+    format("truetype");
+}
 body {
   background-color: var(--bg);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Font2", sans-serif;
+  letter-spacing: 2px;
 }
 .btn {
   width: 150px;
@@ -113,7 +130,9 @@ body {
 }
 .footer-img h3 {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-family: "Font4", sans-serif;
+
+  font-weight: 200;
 }
 .subscribe-btn {
   background-color: var(--pri);
@@ -145,6 +164,7 @@ body {
 }
 footer {
   position: relative;
+  font-family: "Font3", sans-serif;
 }
 .footer-logo img {
   width: 150px;

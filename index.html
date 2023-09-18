@@ -10,8 +10,248 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --bg: #0f1111;
+        --pri: #074133;
+      }
+      @font-face {
+        font-family: "Font1";
+        src: url("./assets/fonts/microsoft-phagspa/phagspab.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "Font2";
+        src: url("./assets/fonts/palatino-linotype/pala.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Font3";
+        src: url("./assets/fonts/the_bold_font/THEBOLDFONT.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "Font4";
+        src: url("./assets/fonts/the_bold_font/THEBOLDFONT\ 2022.otf")
+          format("truetype");
+      }
+      body {
+        background-color: var(--bg);
+        color: #fff;
+        font-family: "Font2", sans-serif;
+        letter-spacing: 2px;
+      }
+      .btn {
+        width: 150px;
+        display: inline-block;
+      }
+      .timeline {
+        width: 300px;
+        display: inline-block;
+        margin: 0 auto;
+      }
+      .centre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px;
+      }
+      /* header */
+      .header {
+        margin: 0;
+        height: 80vh;
+        width: 100vw;
+        position: relative;
+        background: url(./assets/header.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .header img {
+        width: 150px;
+        position: absolute;
+        bottom: 15px;
+        right: 50px;
+      }
+      .story {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px;
+      }
+      .story img {
+        display: inline-block;
+        width: 150px;
+      }
+      .section {
+        margin: 0;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .section h1 {
+        font-size: 5rem;
+      }
+      .section p {
+        font-size: 1.3rem;
+        width: 40%;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .map {
+        background: url(./assets/map.png) fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .kim {
+        background: url(./assets/kim.png) fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .battle {
+        background: url(./assets/battle.png) fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .dreaming {
+        background: url(./assets/dreaming.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .footer-img {
+        background: url(./assets/footer.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: flex-start;
+        padding: 50px;
+      }
+      .footer-img h1 {
+        font-size: 2.5rem;
+      }
+      .footer-img h3 {
+        font-size: 1.3rem;
+        font-family: "Font4", sans-serif;
+
+        font-weight: 200;
+      }
+      .subscribe-btn {
+        background-color: var(--pri);
+        padding: 20px 50px;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+        border: none;
+      }
+      .green-bar {
+        background-color: var(--pri);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+      }
+      .icons svg {
+        width: 50px;
+        margin-right: 30px;
+      }
+      .links a {
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 30px;
+      }
+      footer {
+        position: relative;
+        font-family: "Font3", sans-serif;
+      }
+      .footer-logo img {
+        width: 150px;
+        position: absolute;
+        bottom: 45px;
+        right: 43vw;
+      }
+      .footer-logo {
+        padding: 50px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50vh;
+        }
+        .section {
+          text-align: center;
+        }
+        .header img {
+          width: 150px;
+          position: static;
+          bottom: 50vw;
+          right: 50vh;
+        }
+        .section h1 {
+          font-size: 3.5rem;
+        }
+        .section p {
+          font-size: 1rem;
+          width: 60%;
+          margin-bottom: 50px;
+        }
+        .footer-img {
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+        .footer-img h1 {
+          font-size: 2rem;
+        }
+        .footer-img h3 {
+          font-size: 1rem;
+        }
+        .green-bar {
+          flex-direction: column;
+          padding-bottom: 50px;
+        }
+        .icons svg {
+          width: 40px;
+          margin-right: 10px;
+        }
+        .footer-logo img {
+          width: 100px;
+          position: absolute;
+          bottom: 75px;
+          right: 30vw;
+          transform: translate(-50%, -50%);
+        }
+        .footer-logo {
+          text-align: center;
+          padding-bottom: 60px;
+        }
+        .footer-logo p {
+          margin-top: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
