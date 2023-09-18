@@ -77,19 +77,19 @@ body {
 }
 
 .map {
-  background: url(./assets/map.png);
+  background: url(./assets/map.png) fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .kim {
-  background: url(./assets/kim.png);
+  background: url(./assets/kim.png) fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .battle {
-  background: url(./assets/battle.png);
+  background: url(./assets/battle.png) fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +99,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 50px;
 }
 .footer-img {
   background: url(./assets/footer.png);
@@ -154,6 +155,7 @@ footer {
 .footer-logo {
   padding: 50px;
 }
+
 @media only screen and (max-width: 600px) {
   .header {
     display: flex;

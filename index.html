@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -22,7 +23,7 @@
       </div>
     </header>
     <section>
-      <div class="map section">
+      <div class="map section parallax">
         <h1>Ozymandias</h1>
         <img class="btn" src="./assets/steam_btn.png" alt="" />
         <p>
@@ -30,7 +31,7 @@
           in a faster format, which also shines in multiplayer.
         </p>
       </div>
-      <div class="centre">
+      <div class="centre" data-aos="fade-right">
         <img class="timeline" src="./assets/map_timeline.png" alt="" />
       </div>
     </section>
@@ -43,7 +44,7 @@
           hand-painted towns and procedurally generated countryside.
         </p>
       </div>
-      <div class="centre">
+      <div class="centre" data-aos="fade-right">
         <img class="timeline" src="./assets/kimtimeline.png" alt="" />
       </div>
     </section>
@@ -56,7 +57,7 @@
           system of simultaneous turn-based tactics.
         </p>
       </div>
-      <div class="centre">
+      <div class="centre" data-aos="fade-right">
         <img class="timeline" src="./assets/battle_timeline.png" alt="" />
       </div>
     </section>
@@ -69,7 +70,7 @@
           lead an Oxford college through history.
         </p>
       </div>
-      <div class="centre">
+      <div class="centre" data-aos="fade-right">
         <img class="timeline" src="./assets/dream_timeline.png" alt="" />
       </div>
     </section>
@@ -224,5 +225,9 @@
         <p>&copy; All Rights Reserved The Secret Games Company</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200 });
+    </script>
   </body>
 </html>
